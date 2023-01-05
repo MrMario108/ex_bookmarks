@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Wylogowanie{% endblock %}
+
+{% block content %}
+  <h1>Wylogowano</h1>
+  <p>
+    Zostałeś 
+    Możesz <a href="http://127.0.0.1:8000/account/login">zalogować się ponownie</a>. {% url "login" %}
+  </p>
+{% endblock %}
